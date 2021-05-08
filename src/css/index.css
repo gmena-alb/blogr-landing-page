@@ -1,0 +1,101 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* Primary colors */
+  --clr-primary: hsl(356, 100%, 66%);
+  --clr-primary-light: hsl(355, 100%, 74%);
+  --clr-primary-dark: hsl(208, 49%, 24%);
+
+  /* Neutral colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(240, 2%, 79%);
+  --clr-grey-dark-1: hsl(207, 13%, 34%);
+  --clr-grey-dark-2: hsl(240, 10%, 16%);
+
+  /* Gradient colors */
+  --clr-red-light-1: hsl(13, 100%, 72%);
+  --clr-red-light-2: hsl(353, 100%, 62%);
+  --clr-blue-dark-1: hsl(237, 17%, 21%);
+  --clr-blue-dark-2: hsl(237, 23%, 32%);
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Overpass', sans-serif;
+  /*background: var(--clr-white);
+  color: var(--clr-grey-1);
+  line-height: 1.5;*/
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.btn {
+  border: 1px solid white;
+  font-size: 1.6rem;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 0.1rem;
+  border-radius: 10rem;
+  width: 13.7rem;
+  height: 4.6rem;
+  font-weight: 600;
+  transition: transform 0.5s ease-in-out;
+}
+.btn:active {
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+.btn-white {
+  color: var(--clr-red-light-2);
+  background-color: white;
+}
+.btn-transparent {
+  background-color: transparent;
+  color: var(--clr-white);
+}
+.btn-flat {
+  font-weight: 100;
+  color: var(--clr-primary-dark);
+  background-color: transparent;
+}
+.btn-gradient {
+  color: var(--clr-white);
+  background-image: linear-gradient(
+    to right,
+    var(--clr-red-light-1),
+    var(--clr-red-light-2)
+  );
+}
