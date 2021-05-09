@@ -11,8 +11,8 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <Menu />
       <div className="container">
+        <Menu />
         <img className="logo" src={logo} alt="blogr" />
         <div className="menu-toggle" onClick={toggleMenu}>
           {isMenuOpen ? <FiX /> : <FiMenu />}
@@ -54,18 +54,31 @@ const Wrapper = styled.header`
     position: absolute;
     right: 3.7rem;
     top: 5.1rem;
+    @media (min-width: 1200px) {
+      display: none;
+    }
   }
+
   h1 {
     padding-top: 206px;
   }
   p {
     font-family: 'Overpass', sans-serif;
-    color: var(--clr-white);
+    color: var(--clr-white-2);
   }
   .btn-container {
     display: flex;
     justify-content: space-between;
     padding-bottom: 154px;
+    @media (min-width: 410px) {
+      justify-content: space-evenly;
+    }
+    @media (min-width: 700px) {
+      justify-content: center;
+      .btn-white {
+        margin-right: 6rem;
+      }
+    }
   }
 `;
 

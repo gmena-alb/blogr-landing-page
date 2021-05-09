@@ -4,9 +4,15 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const showMenuDesktop = (width) => {
+    setScreenWidth(width);
   };
 
   return (
@@ -14,6 +20,10 @@ const AppProvider = ({ children }) => {
       value={{
         toggleMenu,
         isMenuOpen,
+        showMenuDesktop,
+        screenWidth,
+        setIsDesktop,
+        isDesktop,
       }}
     >
       {children}

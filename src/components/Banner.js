@@ -28,8 +28,7 @@ const Wrapper = styled.section`
 
   img {
     width: 100%;
-    top: -162px;
-    position: absolute;
+    margin-bottom: -260px;
   }
   article {
     background-color: var(--clr-blue-dark-1);

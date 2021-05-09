@@ -7,7 +7,7 @@ const Section = ({ sectionContent, title, section }) => {
   return (
     <Wrapper>
       {title && <h2 className="section-title">{title}</h2>}
-      <img className={`${section}`}></img>
+      <img className={`${section}`} alt="laptop illustration"></img>
       {sectionContent.map((content, index) => {
         return (
           <article key={index}>
