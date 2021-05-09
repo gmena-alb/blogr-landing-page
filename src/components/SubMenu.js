@@ -16,10 +16,10 @@ const SubMenu = ({ link, subLinks }) => {
       {link}
       {showSubMenu ? <FaAngleUp /> : <FaAngleDown />}
       <ul className={`${showSubMenu ? 'open' : 'closed'}`}>
-        {subLinks.map((subLink, index) => {
+        {subLinks.map((subLink) => {
           return (
-            <li key={index}>
-              <a href="#">{subLink}</a>
+            <li key={subLink.id}>
+              <a href="#">{subLink.subLink}</a>
             </li>
           );
         })}

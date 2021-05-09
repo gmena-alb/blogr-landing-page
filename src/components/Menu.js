@@ -17,7 +17,13 @@ const Menu = () => {
         }`}
       >
         {MenuItems.map((menuItem) => {
-          return <SubMenu link={menuItem.link} subLinks={menuItem.subItems} />;
+          return (
+            <SubMenu
+              key={menuItem.id}
+              link={menuItem.link}
+              subLinks={menuItem.subItems}
+            />
+          );
         })}
         <div className="btn-container">
           <button className="btn btn-flat">Login</button>

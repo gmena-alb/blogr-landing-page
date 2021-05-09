@@ -20,8 +20,8 @@ const Header = () => {
         <h1>A modern publishing platform</h1>
         <p>Grow your audience and build your online brand</p>
         <div className="btn-container">
-          <button class="btn btn-white">Start for Free</button>
-          <button class="btn btn-transparent">Learn More</button>
+          <button className="btn btn-white">Start for Free</button>
+          <button className="btn btn-transparent">Learn More</button>
         </div>
       </div>
     </Wrapper>
@@ -53,22 +53,14 @@ const Wrapper = styled.header`
     font-size: 4rem;
     position: absolute;
     right: 3.7rem;
-    top: 5.6rem;
+    top: 5.1rem;
   }
   h1 {
-    color: var(--clr-white);
-    font-size: 3.3rem;
     padding-top: 206px;
   }
   p {
     font-family: 'Overpass', sans-serif;
     color: var(--clr-white);
-    font-size: 1.7rem;
-    font-weight: 100;
-    letter-spacing: 0.05rem;
-    text-align: center;
-    padding-top: 21px;
-    padding: 21px 7px 50px;
   }
   .btn-container {
     display: flex;
