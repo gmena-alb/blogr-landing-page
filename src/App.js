@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Section from './components/Section';
 import Banner from './components/Banner';
+import Footer from './components/Footer';
 
 import section1Content from './articlesFirstSection';
 import section2Content from './articlesSecondSection';
@@ -16,6 +17,7 @@ function App() {
       />
       <Banner />
       <Section sectionContent={section2Content} section={'section-2'} />
+      <Footer />
     </>
   );
 }
