@@ -54,7 +54,7 @@ const Wrapper = styled.header`
     position: absolute;
     right: 3.7rem;
     top: 5.1rem;
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       display: none;
     }
   }

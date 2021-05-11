@@ -23,7 +23,7 @@ const Menu = () => {
   }, [screenWidth]);
 
   useEffect(() => {
-    if (screenWidth >= 1200) {
+    if (screenWidth >= 1440) {
       setIsDesktop(true);
     } else {
       setIsDesktop(false);
@@ -75,7 +75,7 @@ const Wrapper = styled.nav`
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: visibility 0s, opacity 0.3s linear;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       display: flex;
       justify-content: space-between;
       background-color: transparent;
@@ -89,7 +89,7 @@ const Wrapper = styled.nav`
       padding: 0 0 0 17rem;
     }
     .links {
-      @media (min-width: 1200px) {
+      @media (min-width: 1440px) {
         display: flex;
       }
     }
@@ -108,7 +108,7 @@ const Wrapper = styled.nav`
     font-weight: 600;
     margin-bottom: 3.3rem;
     cursor: pointer;
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       color: var(--clr-white-2);
       margin-bottom: 0;
       margin-right: 11rem;
@@ -118,7 +118,7 @@ const Wrapper = styled.nav`
       vertical-align: middle;
       color: var(--clr-red-light-2);
       margin-left: 0.5rem;
-      @media (min-width: 1200px) {
+      @media (min-width: 1440px) {
         color: var(--clr-white-2);
       }
     }
@@ -126,7 +126,7 @@ const Wrapper = styled.nav`
       background-color: #efeff1;
       padding: 2.5rem;
       transition: visibility 0s, opacity 0.3s linear;
-      @media (min-width: 1200px) {
+      @media (min-width: 1440px) {
         border-radius: 8px;
         position: absolute;
         top: 5rem;
@@ -138,15 +138,18 @@ const Wrapper = styled.nav`
       }
       li:not(:last-child) {
         margin-bottom: 2.5rem;
-        @media (min-width: 1200px) {
+        @media (min-width: 1440px) {
           margin-bottom: 1.5rem;
         }
+      }
+      li:hover {
+        font-weight: bold;
       }
       a {
         color: var(--clr-primary-dark);
         font-weight: 300;
         font-size: 1.5rem;
-        @media (min-width: 1200px) {
+        @media (min-width: 1440px) {
           font-size: 1.7rem;
         }
         transition: hover 0.2s ease-in-out;
@@ -167,7 +170,7 @@ const Wrapper = styled.nav`
   }
 
   .menu-item:first-child {
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       margin-right: 12rem;
     }
   }
@@ -177,7 +180,7 @@ const Wrapper = styled.nav`
     flex-direction: column;
     align-items: center;
     border-top: 1px solid #e4e4e4;
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       flex-direction: row;
       border: none;
       margin-top: -26px;
@@ -185,15 +188,17 @@ const Wrapper = styled.nav`
     .btn {
       margin-top: 1.5rem;
       font-family: 'Ubuntu', sans-serif;
-      align-self: baseline;
+      @media (min-width: 1440px) {
+        align-self: baseline;
+      }
     }
     .btn-flat {
-      @media (min-width: 1200px) {
+      @media (min-width: 1440px) {
         color: var(--clr-white);
       }
     }
     .btn.btn-signup {
-      @media (min-width: 1200px) {
+      @media (min-width: 1440px) {
         background-color: var(--clr-white);
         background-image: none;
         color: var(--clr-red-light-2);

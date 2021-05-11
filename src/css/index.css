@@ -66,7 +66,15 @@ h1 {
 
 h2 {
   font-size: 2.6rem;
-  font-size: clamp(2.6rem, 5vw, 5rem);
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  font-family: 'Overpass', sans-serif;
+  color: var(--clr-primary-dark);
+  text-align: center;
+}
+h3 {
+  font-size: 2.6rem;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+
   font-family: 'Overpass', sans-serif;
   color: var(--clr-primary-dark);
   text-align: center;
@@ -74,13 +82,9 @@ h2 {
 p {
   margin: 3.1rem 0 5.5rem;
   font-size: 1.7rem;
-  font-size: clamp(1.7rem, 3vw, 2.2rem);
   font-weight: 100;
   letter-spacing: 0.05rem;
   text-align: center;
-  @media screen and (min-width: 1200px) {
-    letter-spacing: 0;
-  }
 }
 .btn {
   border: 1px solid white;
@@ -99,12 +103,25 @@ p {
 }
 .btn-white {
   color: var(--clr-red-light-2);
-  background-color: white;
+  background-color: var(--clr-white);
+  transition: all 0.2s linear;
 }
+
+.btn-white:hover {
+  background-color: var(--clr-primary-light);
+  color: var(--clr-white);
+}
+
 .btn-transparent {
   background-color: transparent;
   color: var(--clr-white);
 }
+
+.btn-transparent:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-primary-light);
+}
+
 .btn-flat {
   font-weight: 100;
   color: var(--clr-primary-dark);
