@@ -34,6 +34,7 @@ const Wrapper = styled.section`
     padding: 0 2.4rem;
     position: relative;
     overflow: hidden;
+    min-height: 86rem;
     @media (min-width: 1440px) {
       margin-top: 6rem;
       padding: 10rem 16.5rem 2rem;
@@ -108,10 +109,10 @@ const Wrapper = styled.section`
         content: url(${bgMobile1});
         @media (min-width: 1440px) {
           content: url(${bgDesktop1});
-          max-width: 130%;
+          max-width: 77rem;
           position: absolute;
-          margin-right: -310px;
-          margin-top: 38px;
+          margin-right: -264px;
+          margin-top: 0px;
         }
       }
     }
@@ -137,15 +138,15 @@ const Wrapper = styled.section`
         content: url(${bgMobile2});
         @media (min-width: 1440px) {
           content: url(${bgDesktop2});
-          max-width: 143%;
+          max-width: 90rem;
           position: absolute;
-          margin-top: 38px;
-          margin-left: -277px;
+          margin-top: 0px;
+          margin-left: -225px;
         }
       }
     }
     .articles {
-      padding-left: 1rem;
+      padding-left: 4rem;
       padding-right: 2rem;
     }
   }

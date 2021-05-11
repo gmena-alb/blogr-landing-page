@@ -46,7 +46,6 @@ const Wrapper = styled.section`
   .img-container {
     display: flex;
     justify-content: center;
-    margin-bottom: -24.2rem;
     @media (min-width: 1440px) {
       margin-bottom: 0;
       position: relative;
@@ -55,6 +54,8 @@ const Wrapper = styled.section`
     img {
       max-width: 37.5rem;
       overflow: hidden;
+      position: absolute;
+      margin-top: -16rem;
       @media (min-width: 1440px) {
         position: absolute;
         max-width: 157%;
@@ -63,7 +64,7 @@ const Wrapper = styled.section`
     }
   }
   article {
-    padding: 23rem 2.4rem 12.1rem;
+    padding: 23rem 6.4rem 12.1rem;
     @media (min-width: 1440px) {
       padding: 12.2rem 6rem 11rem;
       margin-left: 8.3rem;
